@@ -30,6 +30,22 @@ To run this project, you need to have the following libraries installed:
 bash
 Copy code
 *     pip install pandas numpy matplotlib seaborn scikit-learn
+
+ ### Data Acquisition
+The dataset for this project is sourced from Kaggle. You can fetch the dataset using the Kaggle API. Here’s how:
+1. Install Kaggle API: Ensure you have the Kaggle API installed. If you haven't done this yet, you can install it via pip:
+
+*     pip install kaggle
+2. Set Up Kaggle API Credentials:
+
+*  Go to your Kaggle account and navigate to "Account" settings.
+* Scroll down to the "API" section and click on "Create New API Token". This will download a * kaggle.json file.
+* Place this file in the ~/.kaggle/ directory on your system (create the directory if it doesn’t exist). Make sure the file has the appropriate permissions:
+*      chmod 600 ~/.kaggle/kaggle.json
+3. Download the Dataset: Use the following command to download the dataset directly:
+
+*     kaggle datasets download -d <dataset-name>
+ 
 #### Data Exploration
 We began the analysis with Exploratory Data Analysis (EDA) to understand the dataset. Key steps included:
 
